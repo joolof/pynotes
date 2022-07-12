@@ -6,7 +6,7 @@ import tempfile
 import errno
 import datetime
 import subprocess
-import npyscreen, curses
+import npyscreen
 from pathlib import Path
 """
 Some environment variables
