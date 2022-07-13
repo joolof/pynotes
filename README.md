@@ -14,7 +14,5 @@ In ` ~/.local/lib/python3.8/site-packages/npyscreen/wgmultiline.py` I had to edi
 
 Notes are saved as markdown files, located at {$HOME}/.pynotes (the directory will be created if it doesn't exist).
 
-<video width="320" height="240" controls>
-  <source src="screenshots/example.mkv" type="video/mp4">
-</video>
+![](screenshots/example.mkv)
 
