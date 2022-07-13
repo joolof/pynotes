@@ -106,16 +106,18 @@ class RecordList(npyscreen.MultiLineAction):
         self.parent.parentApp.switchForm('EDITRECORDFM')
 
     def delete_record(self, *args, **keywords):
+        # npyscreen.notify_confirm('dirname: {}\nvalue: {}'.format(self.parent.dirname, self.values[self.cursor_line][1]), title= 'popup')
         if self.parent.dirname == '':
             filename = self.values[self.cursor_line][0]
         else:
             if self.parent.dirname == self.values[self.cursor_line][0]:
                 filename = self.values[self.cursor_line][0]
+            elif self.values[self.cursor_line][1] == 0:
+                filename = self.values[self.cursor_line][0]
             else:
                 filename = self.parent.dirname + '/' + self.values[self.cursor_line][0] + '.md'
         message_to_display = 'Do you want to delete {}?'.format(filename)
         notify_result = npyscreen.notify_ok_cancel(message_to_display, title= '')
-        # npyscreen.notify_confirm(filename, title= 'popup')
         if notify_result:
             args = ['rm', '-rf', maindir + filename]
             rmfile = subprocess.Popen(args, stdout = open(os.devnull, 'w'), stderr = open(os.devnull, 'w')).wait()
