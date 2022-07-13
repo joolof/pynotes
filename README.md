@@ -14,5 +14,5 @@ In ` ~/.local/lib/python3.8/site-packages/npyscreen/wgmultiline.py` I had to edi
 
 Notes are saved as markdown files, located at {$HOME}/.pynotes (the directory will be created if it doesn't exist).
 
-![](screenshots/example.mp4)
+https://user-images.githubusercontent.com/22960520/178684031-107cd1be-479b-47f0-aacf-5d5267b613e7.mp4
 
