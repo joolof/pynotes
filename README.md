@@ -18,10 +18,10 @@ One small detail, I wanted to use the letter `n` to create a new not, and this s
 
 Once you are in PyNotes, you can press `?` to display a window with the shortcuts:
 
-- "Enter": Expand the highlighted directory
+- "Enter": Expand or collapse the highlighted directory
 - "a": Create a new directory
-- "n": Create a new entry in the directory
-- "d": Delete the whole directory (there will be a confirmation window)
+- "n": Create a new file in the directory
+- "d": Delete the whole directory or the selected file (there will be a confirmation window)
 - "r": Refresh the list
 - "q": Quit
 
